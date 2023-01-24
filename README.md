@@ -1,4 +1,4 @@
- Name: 		ZmotanCore
+ Name: 		ZmotanCore \n
  Version: 	4.20
  Creator: 	zmotan
  Website:	https://zmotan.com

@@ -3,9 +3,10 @@
  Creator: 	zmotan<br />
  Website:	https://zmotan.com<br /><br />
 
-More info/pictures coming soon... <br />
+ Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
+ https://prnt.sc/ptvD49JBvC6T
+ <br /><br/>
 
- Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br /><br />
 
 Template: 	<br />
 "[command] [(@)username] [value/all]"<br /><br />

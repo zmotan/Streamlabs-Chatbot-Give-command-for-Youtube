@@ -4,7 +4,7 @@
  Website:	https://zmotan.com<br /><br />
 
  Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
- https://prnt.sc/ptvD49JBvC6T
+ ![alt text](https://prnt.sc/ptvD49JBvC6T)
  <br /><br/>
 
 

@@ -63,7 +63,6 @@ def Execute(data):
 			else: 
 				receiverName = receiverNameTemp
 
-			Parent.Log(ScriptName, receiverNameTemp + " -> " + receiverName)
 			try:
 				costs = int(lastParam)
 			except:
@@ -86,15 +85,17 @@ def Execute(data):
 		elif giverName == receiverName:
 			outputMessage = settings["responseGiverIsTaker"]
 		else:
+			viewerList = []
 			for viewer in Parent.GetViewerList():
-				viewerName = Parent.GetDisplayName(viewer)
-				if receiverName.lower() == viewerName.lower():
-					Parent.RemovePoints(giverID, giverName, costs)
-					Parent.AddPoints(viewer, viewerName, costs)
-					outputMessage = settings["responseSuccess"]
-					break
-				else:
-					outputMessage = settings["responseNoTargetFound"]
+				viewerName = Parent.GetDisplayName(viewer).lower()
+				viewerList.append(viewerName)
+				
+			if receiverName.lower() in viewerList:
+				Parent.RemovePoints(giverID, giverName, costs)
+				Parent.AddPoints(viewer, viewerName, costs)
+				outputMessage = settings["responseSuccess"]
+			else:
+				outputMessage = settings["responseNoTargetFound"]
 
 
 		outputMessage = outputMessage.replace("$cost", str(costs))

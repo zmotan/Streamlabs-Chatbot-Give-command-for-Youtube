@@ -10,7 +10,7 @@ ScriptName = "Give points"
 Website = "http://zmotan.com"
 Description = "Script for transfering points between Youtube users."
 Creator = "Zmotan"
-Version = "0.4.20"
+Version = "4.20"
 
 configFile = "config.json"
 settings = {}

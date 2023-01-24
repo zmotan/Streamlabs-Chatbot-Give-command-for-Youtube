@@ -8,13 +8,13 @@ More info/pictures coming soon... <br />
  Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br /><br />
 
 Template: 	<br />
-"!give [@username] [value/all]"<br /><br />
+"[command] [(@)username] [value/all]"<br /><br />
 
 Examples: 	<br />
-"!give @zmotan 420"<br />
+"!give @zmotan 69"<br />
 "!give zmotan 420"<br />
 "!give @zmotan all"<br />
-"!give zmotan all"<br /><br />
+"!give zmotan ALL"<br /><br />
 
 Possible parameters:<br />
 $cost = points you want to give<br />

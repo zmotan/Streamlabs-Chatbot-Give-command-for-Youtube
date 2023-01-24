@@ -3,9 +3,9 @@
  Creator: 	zmotan<br />
  Website:	https://zmotan.com<br /><br />
 
-More info/pictures coming soon..
+More info/pictures coming soon... <br />
 
- Note: Works with Youtube Tag or with just name ( "@zmotan" / "zmotan" )<br /><br />
+ Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br /><br />
 
 Template: 	<br />
 "!give [@username] [value/all]"<br /><br />

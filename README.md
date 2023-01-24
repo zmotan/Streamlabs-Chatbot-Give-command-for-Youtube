@@ -4,6 +4,12 @@
  Website:	https://zmotan.com
 
  
+ 
+ 
+ Note: Works with Youtube Tag or with just name ( "@zmotan" / "zmotan" )
+ 
+ 
+
 
 Template: 	
 
@@ -21,7 +27,9 @@ Examples:
 
 
 
-Also works with Youtube Tag!
+
+
+
 
 
 Possible parameters:

@@ -1,0 +1,69 @@
+{
+    "output_file": "config.json",
+
+    "liveOnly": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Live Only Mode",
+        "tooltip": "True if you want it to only run when you are live",
+        "group" : "General"
+    },
+    "command": {
+        "type": "textbox",
+        "value": "!save",
+        "label": "Command",
+        "tooltip": "Name of the Command",
+        "group": "General"
+    },
+    "permission": {
+        "type": "dropdown",
+        "value": "Everyone",
+        "items": ["Everyone","Regular","Subscriber","Moderator","Editor"],
+        "label": "Permission level",
+        "tooltip": "Set the permission level for the command",
+        "group": "General"
+    },
+    "responseNotEnoughPoints": {
+        "type": "textbox",
+        "value": "$user, you don't have $cost $currency, you have $points $currency.",
+        "label": "responseNotEnoughPoints",
+        "tooltip": "Set the response for value too high",
+        "group": "General"
+    },
+	"responseNotIntiger": {
+        "type": "textbox",
+        "value": "$user, value is not positive intiger or argument is missing. Must be at least 1. Template: !give [username] [value]",
+        "label": "responseNotIntiger",
+        "tooltip": "Set the response for vrong value",
+        "group": "General"
+    },
+	"responseSuccess": {
+        "type": "textbox",
+        "value": "$user gave $target $cost $currency.",
+        "label": "responseSuccess",
+        "tooltip": "Set the response for successful transaction",
+        "group": "General"
+    },
+	"responseNoTargetFound": {
+        "type": "textbox",
+        "value": "$user, user with name $target was not found.",
+        "label": "responseNoTargetFound",
+        "tooltip": "Set the response if the target user is not found.",
+        "group": "General"
+    },
+	"responseGiverIsTaker": {
+        "type": "textbox",
+        "value": "$user, what's the point of giving yourself nothing?",
+        "label": "responseNoTargetFound",
+        "tooltip": "Set the response if user wants to give coins to himeself.",
+        "group": "General"
+    },
+    "openReadMe": {
+        "type": "button",
+        "label": "Open 'Readme Me' file",
+        "tooltip": "Opens the 'Readme.txt' for this script.",
+        "function": "OpenReadMe",
+        "wsevent": "",
+        "group": ""
+    }
+}

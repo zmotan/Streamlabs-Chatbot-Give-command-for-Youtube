@@ -8,38 +8,33 @@
  
  Note: Works with Youtube Tag or with just name ( "@zmotan" / "zmotan" )
  
- 
+ <br /><br />
 
 
-Template: 	
+Template: 	<br />
 
-"!give [@username] [value/all]"
+"!give [@username] [value/all]"<br /><br />
 
-Examples: 	
+Examples: 	<br />
 
-"!give @zmotan 420"
+"!give @zmotan 420"<br />
 
-"!give zmotan 420"
+"!give zmotan 420"<br />
 
-"!give @zmotan all"
+"!give @zmotan all"<br />
 
-"!give zmotan all"
-
-
-
+"!give zmotan all"<br /><br /><br />
 
 
 
 
 
-Possible parameters:
 
-$cost = points you want to give
 
-$user = giver name
 
-$points = how many points giver currently have
-
-$currency = currency name (set in chatbot)
-
-$command = command name
+Possible parameters:<br />
+$cost = points you want to give<br />
+$user = giver name<br />
+$points = how many points giver currently have<br />
+$currency = currency name (set in chatbot)<br />
+$command = command name<br />

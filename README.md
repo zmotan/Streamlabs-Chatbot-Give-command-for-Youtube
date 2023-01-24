@@ -1,4 +1,4 @@
- Name: 		ZmotanCore<br />
+ Name: 		Give Points<br />
  Version: 	4.20<br />
  Creator: 	zmotan<br />
  Website:	https://zmotan.com<br /><br />

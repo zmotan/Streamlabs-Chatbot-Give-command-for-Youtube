@@ -2,7 +2,9 @@
  Version: 	4.20<br />
  Creator: 	zmotan<br />
  Website:	https://zmotan.com<br /><br />
- 
+
+More info/pictures coming soon..
+
  Note: Works with Youtube Tag or with just name ( "@zmotan" / "zmotan" )<br /><br />
 
 Template: 	<br />

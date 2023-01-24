@@ -1,22 +1,21 @@
-===============================================================================
- Name: 		ZmotanCore
- Version: 	4.20
- Creator: 	zmotan
- Website:	https://zmotan.com
-===============================================================================
-Usage: 
+Name: Give Points
+Version: 4.20
+Creator: zmotan
+Website: https://zmotan.com
 
-Template: 	
+
+Note: Works with Youtube Tag or with just name ( "@zmotan" / "zmotan" )
+
+
+Template:
 "!give [@username] [value/all]"
 
-Examples: 	
+
+Examples:
 "!give @zmotan 420"
 "!give zmotan 420"
 "!give @zmotan all"
 "!give zmotan all"
-
-
-Also works with Youtube Tag!
 
 
 Possible parameters:
@@ -25,4 +24,3 @@ $user = giver name
 $points = how many points giver currently have
 $currency = currency name (set in chatbot)
 $command = command name
-===============================================================================

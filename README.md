@@ -1,7 +1,7 @@
- Name: 		ZmotanCore
- Version: 	4.20
- Creator: 	zmotan
- Website:	https://zmotan.com
+ Name: 		ZmotanCore<br />
+ Version: 	4.20<br />
+ Creator: 	zmotan<br />
+ Website:	https://zmotan.com<br />
 
  <br />
  

@@ -6,7 +6,7 @@
  4.20.69 Overengineered Patch Notes:<br />
 Fix: Users can have multiple spaces next to each other<br />
 
-API/Youtube chat limits:
+API/Youtube chat limits:<br />
 If user's first letter is AT - "@" or SPACE (" ") you have to tag it or use another @ in front to detect the correct user. (Example: user=@ndrei -> usage="!give @@ndrei 69")<br />
 If there are 2 users with exactly same name (case insensetive) the points will be added to the first detected user in the viewer list.<br />
 Users whos name ends with space (" ") or have multiple spaces ("  ") next to each other can't receive points. Youtube will reformat message and remove spaces meaning that user can't be find in database.<br /><br />

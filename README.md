@@ -5,17 +5,17 @@
 
  Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
  ![Preview Image](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/Preview.png)
- <br /><br/>
+ <br />
 
 Template: 	<br />
-"[command] [(@)username] [value/all]"<br /><br />
+"[command] [(@)username] [value/all]"<br />
 
 Examples: 	<br />
 "!give @zmotan 69"<br />
 "!give zmotan 420"<br />
 "!give @zmotan all"<br />
 "!give zmotan ALL"<br /><br />
-![Preview SLChatbot](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/PreviewSLChatbot.png)
+![Preview SLChatbot](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/PreviewSLChatbot.png)<br/>
 Possible parameters:<br />
 $cost = points you want to give<br />
 $user = giver name<br />

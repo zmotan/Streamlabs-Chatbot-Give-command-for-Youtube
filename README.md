@@ -8,7 +8,8 @@ Fix: Users can have multiple spaces next to each other<br />
 
 API limits:<br />
 If user's first letter is @ you have to tag it or use another @ infront to detect the correct user. (Example: user= @ndrei -> usage= "!give @@ndrei 69")<br />
-If there are 2 users with exactly same name (case insensetive) the points will be added to the first detected user in the viewer list.  <br /><br />
+If there are 2 users with exactly same name (case insensetive) the points will be added to the first detected user in the viewer list.  <br />
+Testing: For users whos name ends with space (" ") you have to use tag otherwise Youtube deletes more than one spaces next to each other.<br /><br />
 
  Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
  ![Preview Image](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/Preview.png)

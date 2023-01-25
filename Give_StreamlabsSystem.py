@@ -10,7 +10,7 @@ ScriptName = "Give points"
 Website = "http://zmotan.com"
 Description = "Script for transfering points between Youtube users."
 Creator = "Zmotan"
-Version = "4.20"
+Version = "4.20.69"
 
 
 configFile = "config.json"
@@ -51,15 +51,14 @@ def Execute(data):
 		viewerLegitList = []
 		viewerLowerList = []
 		viewerListID = []
+		giveToName = ""
 		
 		if paramCount >= 3:
 			lastIndex = paramCount - 1
 			lastParam = data.GetParam(lastIndex)
-			tempmessage = data.Message
-			messageArray = tempmessage.split()
-			messageArray.pop(lastIndex)
-			messageArray.pop(0)
-			receiverNameTemp = ' '.join(messageArray)
+			receiverNameTemp = data.Message
+			receiverNameTemp = receiverNameTemp.replace(settings["command"]+" ", "")
+			receiverNameTemp = receiverNameTemp.replace(" "+lastParam, "")
 			firstLetterRNT = receiverNameTemp[:1]
 			if firstLetterRNT == "@":
 				receiverName = receiverNameTemp[1:]
@@ -69,11 +68,11 @@ def Execute(data):
 			try:
 				costs = int(lastParam)
 			except:
-				if data.GetParam(lastIndex) == 'all': 
+				if lastParam == 'all': 
 					costs = giverPoints
-				elif data.GetParam(lastIndex) == 'ALL': 
+				elif lastParam == 'ALL': 
 					costs = giverPoints
-				elif data.GetParam(lastIndex) == 'All': 
+				elif lastParam == 'All': 
 					costs = giverPoints
 				else :
 					costs = -1
@@ -88,8 +87,8 @@ def Execute(data):
 		elif giverName == receiverName:
 			outputMessage = settings["responseGiverIsTaker"]
 		else:
-			viewerList = []
-			for viewer in Parent.GetViewerList():
+			currentViewers = Parent.GetViewerList()
+			for viewer in currentViewers:
 				viewerListID.append(viewer)
 		
 				viewerLegitName = Parent.GetDisplayName(viewer)
@@ -108,6 +107,7 @@ def Execute(data):
 				
 				outputMessage = settings["responseSuccess"]
 			else:
+				giveToName = receiverName
 				outputMessage = settings["responseNoTargetFound"]
 
 

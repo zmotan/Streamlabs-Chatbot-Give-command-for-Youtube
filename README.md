@@ -2,17 +2,14 @@
  Version: 	4.20.69<br />
  Creator: 	zmotan<br />
  Website:	https://zmotan.com<br />
- -----------------------------------------<br />
+######################################<br />
  4.20.69 Patch Notes:
 - Fix: Users can have multiple spaces next to each other
 
 API limits:
 - If user's first letter is @ you have to tag it or use another @ infront to detect the correct user. (Example: user= @ndrei -> usage= "!give @@ndrei 69"
 - If there are 2 users with exactly same name the points will be added to the first detected user in the viewer list.  <br />
-- -----------------------------------------<br />
-
- 
-
+######################################<br />
  Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
  ![Preview Image](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/Preview.png)
  <br />

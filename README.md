@@ -11,9 +11,7 @@ If user's first letter is @ you have to tag it or use another @ infront to detec
 If there are 2 users with exactly same name (case insensetive) the points will be added to the first detected user in the viewer list.  <br />
 Testing: For users whos name ends with space (" ") you have to use tag otherwise Youtube deletes more than one spaces next to each other.<br /><br />
 
- Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
- ![Preview Image](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/Preview.png)
- <br />
+ 
 
 Template: 	<br />
 "[command] [(@)username] [value/all]"<br />
@@ -23,6 +21,10 @@ Examples: 	<br />
 "!give zmotan 420"<br />
 "!give @zmotan all"<br />
 "!give zmotan ALL"<br />
+
+Note: Works with Youtube Tag or just with name ( "@zmotan" / "zmotan" )<br />
+ ![Preview Image](https://github.com/zmotan/Streamlabs-Chatbot-Give-command-for-Youtube/blob/main/Preview.png)
+ <br />
 
 Possible parameters:<br />
 $cost = points you want to give<br />

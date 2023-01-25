@@ -12,9 +12,9 @@ Description = "Script for transfering points between Youtube users."
 Creator = "Zmotan"
 Version = "4.20"
 
+
 configFile = "config.json"
 settings = {}
-receiverName = ""
 
 
 def ScriptToggled(state):
@@ -48,7 +48,10 @@ def Execute(data):
 		giverPoints = Parent.GetPoints(giverID)
 		paramCount = data.GetParamCount()
 		receiverName = ""
-
+		viewerLegitList = []
+		viewerLowerList = []
+		viewerListID = []
+		
 		if paramCount >= 3:
 			lastIndex = paramCount - 1
 			lastParam = data.GetParam(lastIndex)
@@ -87,12 +90,22 @@ def Execute(data):
 		else:
 			viewerList = []
 			for viewer in Parent.GetViewerList():
-				viewerName = Parent.GetDisplayName(viewer).lower()
-				viewerList.append(viewerName)
+				viewerListID.append(viewer)
+		
+				viewerLegitName = Parent.GetDisplayName(viewer)
+				viewerLegitList.append(viewerLegitName)
 				
-			if receiverName.lower() in viewerList:
-				Parent.RemovePoints(giverID, giverName, costs)
-				Parent.AddPoints(viewer, viewerName, costs)
+				viewerLowerName = Parent.GetDisplayName(viewer).lower()
+				viewerLowerList.append(viewerLowerName)
+
+			if receiverName.lower() in viewerLowerList:
+				viewerIndex = viewerLowerList.index(receiverName.lower())
+				giveToName = viewerLegitList[viewerIndex]
+				giveToID = viewerListID[viewerIndex]
+				
+				Parent.RemovePoints(giverID, giverName, costs)			
+				Parent.AddPoints(giveToID, giveToName, costs)
+				
 				outputMessage = settings["responseSuccess"]
 			else:
 				outputMessage = settings["responseNoTargetFound"]
@@ -103,7 +116,7 @@ def Execute(data):
 		outputMessage = outputMessage.replace("$points", str(giverPoints))
 		outputMessage = outputMessage.replace("$currency", Parent.GetCurrencyName())
 		outputMessage = outputMessage.replace("$command", settings["command"])
-		outputMessage = outputMessage.replace("$target", receiverName)
+		outputMessage = outputMessage.replace("$target", giveToName)
 		Parent.SendStreamMessage(outputMessage)
 
 	return

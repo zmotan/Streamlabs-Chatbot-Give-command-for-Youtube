@@ -3,7 +3,6 @@
  Creator: 	zmotan<br />
  Website:	https://zmotan.com<br />
 <br />
-
 Simple yet most reliable script for transfering points between users on Youtube.
 
 Template: 	<br />
